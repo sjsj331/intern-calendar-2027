@@ -17,7 +17,7 @@ h+=cells.map(c=>{if(!c)return '<div class="d"></div>';const ds=`${m}-${String(c)
 $("cal").innerHTML=`<div class="grid">${h}</div>`;}
 $("prev").disabled=mi==0;$("next").disabled=mi==MONTHS.length-1;showDetail();}
 function showDetail(){const el=$("detail");if(sel==null){el.hidden=true;return}const d=D[tab],e=d.EVS[sel],o=d.ORGS[e.org];el.hidden=false;
-if(e.org=="me"){el.innerHTML=`<button class="close" onclick="sel=null;showDetail()">닫기</button><h2>${e.d.slice(5).replace("-","/")} ${esc(e.label)}</h2><p>내 개인 일정입니다. JPT 접수 11/17 12:00(특별 11/19), 시험 11/22, 성적 11/27 · JLPT 12/6 · 일본 여행 12월 중순~하순.</p>`;return}
+if(e.org=="me"){el.innerHTML=`<button class="close" onclick="sel=null;showDetail()">닫기</button><h2>${e.d.slice(5).replace("-","/")} ${esc(e.label)}</h2><p>내 개인 일정입니다. JPT 접수 11/17 12:00(특별 11/19), 시험 11/22, 성적 11/27 · JLPT 12/6 · 일본 여행 12/14~28.</p>`;return}
 const rows=[["기관",o.name],["지원 가능",`<span class="pill ${o.tone}">${esc(o.ok)}</span>`,1],["일정 종류",d.KNAME[e.kind]],["직무·분야",o.field],["인턴 유형",o.type]];
 if(d.JRMAP)rows.push(["지역인재",`${esc(d.JRTEXT[d.JRMAP[e.org]||"확인"])}`,1],["지역인재 근거",o.region]);
 rows.push(["요건",o.req],["확정/예상",o.conf]);
