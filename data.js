@@ -11,7 +11,8 @@ window.DATA={
    "kyci": "가점",
    "kmi": "가점",
    "kiost": "확인",
-   "kofic": "확인"
+   "kofic": "확인",
+   "kha": "확인"
   },
   "JRTEXT": {
    "의무": "★ 의무채용·할당 (이전지역인재 30% 목표)",
@@ -146,6 +147,17 @@ window.DATA={
     "tone": "neutral",
     "conf": "확정",
     "src": "https://www.ybmnet.co.kr"
+   },
+   "kha": {
+    "name": "한국해양조사협회",
+    "field": "전산정보",
+    "type": "확인 필요",
+    "region": "부산 소재 여부·지역인재 해당 여부 확인 필요",
+    "conf": "확정: 11/17 마감, 11/28 필기 (아침 화면 기준. 공고 원문은 아직 확인 못 함)",
+    "req": "공고문 확인 필요",
+    "ok": "확인 필요",
+    "tone": "neutral",
+    "src": "-"
    }
   },
   "EVS": [
@@ -174,9 +186,21 @@ window.DATA={
     "org": "me"
    },
    {
+    "d": "2026-11-17",
+    "label": "해양조사협회 전산정보 마감",
+    "kind": "deadline",
+    "org": "kha"
+   },
+   {
     "d": "2026-11-19",
     "label": "JPT 특별접수 12시",
     "kind": "exam",
+    "org": "me"
+   },
+   {
+    "d": "2026-11-20",
+    "label": "공모전 마감 (교내)",
+    "kind": "personal",
     "org": "me"
    },
    {
@@ -196,6 +220,12 @@ window.DATA={
     "label": "JPT 성적",
     "kind": "exam",
     "org": "me"
+   },
+   {
+    "d": "2026-11-28",
+    "label": "해양조사협회 필기",
+    "kind": "stage",
+    "org": "kha"
    },
    {
     "d": "2026-12-06",
@@ -392,6 +422,46 @@ window.DATA={
     "tone": "neutral",
     "conf": "확정",
     "src": "-"
+   },
+   "bohun": {
+    "name": "중앙보훈병원 (서울 강동)",
+    "field": "전산",
+    "type": "확인 필요",
+    "conf": "확정: 11/13 마감 (아침 화면(today.html) 기준 날짜. 공고 원문은 아직 확인 못 함)",
+    "req": "공고문 확인 필요",
+    "ok": "확인 필요",
+    "tone": "neutral",
+    "src": "-"
+   },
+   "jdc": {
+    "name": "제주국제자유도시개발센터(JDC) (본사 제주)",
+    "field": "확인 필요",
+    "type": "확인 필요",
+    "conf": "확정: 11/13 마감 (아침 화면(today.html) 기준 날짜. 공고 원문은 아직 확인 못 함)",
+    "req": "공고문 확인 필요",
+    "ok": "확인 필요",
+    "tone": "neutral",
+    "src": "-"
+   },
+   "ssis": {
+    "name": "사회보장정보원 (서울)",
+    "field": "확인 필요",
+    "type": "확인 필요",
+    "conf": "확정: 11/16 마감 (아침 화면(today.html) 기준 날짜. 공고 원문은 아직 확인 못 함)",
+    "req": "공고문 확인 필요",
+    "ok": "확인 필요",
+    "tone": "neutral",
+    "src": "-"
+   },
+   "nps": {
+    "name": "국민연금공단 (본부 전주)",
+    "field": "정보보안",
+    "type": "확인 필요",
+    "conf": "확정: 11/16 마감 (아침 화면(today.html) 기준 날짜. 공고 원문은 아직 확인 못 함)",
+    "req": "공고문 확인 필요",
+    "ok": "확인 필요",
+    "tone": "neutral",
+    "src": "-"
    }
   },
   "EVS": [
@@ -414,10 +484,34 @@ window.DATA={
     "org": "kibo"
    },
    {
+    "d": "2026-11-13",
+    "label": "보훈병원 전산 마감",
+    "kind": "deadline",
+    "org": "bohun"
+   },
+   {
+    "d": "2026-11-13",
+    "label": "JDC 마감",
+    "kind": "deadline",
+    "org": "jdc"
+   },
+   {
     "d": "2026-11-16",
     "label": "기업은행 마감 10시",
     "kind": "deadline",
     "org": "ibk"
+   },
+   {
+    "d": "2026-11-16",
+    "label": "사회보장정보원 마감",
+    "kind": "deadline",
+    "org": "ssis"
+   },
+   {
+    "d": "2026-11-16",
+    "label": "국민연금 정보보안 마감",
+    "kind": "deadline",
+    "org": "nps"
    },
    {
     "d": "2026-11-17",
@@ -429,6 +523,12 @@ window.DATA={
     "d": "2026-11-19",
     "label": "JPT 특별접수 마감",
     "kind": "exam",
+    "org": "me"
+   },
+   {
+    "d": "2026-11-20",
+    "label": "공모전 마감 (교내)",
+    "kind": "personal",
     "org": "me"
    },
    {
