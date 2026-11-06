@@ -1,4 +1,4 @@
-const DL=[{n:"남부발전 체험형",t:"2026-11-11T11:00:00+09:00"},{n:"IBK기업은행 체험형",t:"2026-11-16T10:00:00+09:00"},{n:"JPT 접수",t:"2026-11-17T12:00:00+09:00"},{n:"JPT 시험",t:"2026-11-22T09:00:00+09:00"},{n:"JLPT",t:"2026-12-06T13:00:00+09:00"}];
+const DL=[{n:"도로교통공단 체험형",t:"2026-11-09T18:00:00+09:00"},{n:"청소년상담원 체험형",t:"2026-11-10T18:00:00+09:00"},{n:"남부발전 체험형",t:"2026-11-11T11:00:00+09:00"},{n:"기보 체험형",t:"2026-11-12T23:59:00+09:00"},{n:"IBK기업은행 체험형",t:"2026-11-16T10:00:00+09:00"},{n:"JPT 접수",t:"2026-11-17T12:00:00+09:00"},{n:"JPT 시험",t:"2026-11-22T09:00:00+09:00"},{n:"JLPT",t:"2026-12-06T13:00:00+09:00"}];
 const dd=document.getElementById("dday");
 function next(){const now=Date.now();return DL.find(d=>Date.parse(d.t)>now)}
 function tick(){const d=next();if(!d){dd.textContent="화이팅! 🎉";return}const ms=Date.parse(d.t)-Date.now(),D=Math.floor(ms/864e5),H=Math.floor(ms%864e5/36e5),M=Math.floor(ms%36e5/6e4);dd.textContent=`${d.n} 마감까지 D-${D} ${H}시간 ${M}분`;}

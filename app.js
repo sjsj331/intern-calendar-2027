@@ -1,4 +1,4 @@
-const D=window.DATA,TODAY="2026-11-02",MONTHS=["2026-11","2026-12","2027-01","2027-02","2027-03","2027-04","2027-05","2027-06"];
+const D=window.DATA,TODAY=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Seoul"}),MONTHS=["2026-11","2026-12","2027-01","2027-02","2027-03","2027-04","2027-05","2027-06"];
 const CONCL={busan:"남부발전(11/11 11시)·청소년상담원(11/10) 지금 지원! HUG·주금공은 11월 말~12월 예상",seoul:"1순위 IBK기업은행 체험형 — 11/16 오전 10시 마감, 어학·한국사 무관"};
 let tab="busan",mi=0,list=false,sel=null;const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
