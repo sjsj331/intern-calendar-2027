@@ -17,3 +17,5 @@ h1{font-size:26px;margin:16px 0 6px}.concl{font-size:21px;font-weight:700;backgr
 .pill{display:inline-block;padding:1px 8px;border-radius:99px;font-weight:700}.success{background:#dff5e3;color:#126b2b}.warning{background:#fff1d6;color:#8a5300}.neutral{background:#eee}
 footer{color:#666;font-size:14px;margin:24px auto 40px}
 @media(max-width:600px){.grid .d{min-height:70px}.chip{font-size:11px;padding:1px 2px;border-left-width:3px}h1{font-size:23px}}
+
+.grid .trip{background:#f3ecfb}

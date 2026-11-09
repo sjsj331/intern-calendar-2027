@@ -1,5 +1,5 @@
 const D=window.DATA,TODAY=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Seoul"}),MONTHS=["2026-11","2026-12","2027-01","2027-02","2027-03","2027-04","2027-05","2027-06"];
-const CONCL={busan:"남부발전(11/11 11시)·청소년상담원(11/10) 지금 지원! HUG·주금공은 11월 말~12월 예상",seoul:"1순위 IBK기업은행 체험형 — 11/16 오전 10시 마감, 어학·한국사 무관"};
+const CONCL={busan:"오늘 언론재단 11/9 17:59! 청소년상담원 11/10·남부발전 11/11",seoul:"언론재단 11/9 17:59 · IBK 11/16 10시 · 예금보험공사 11/20"};
 let tab="busan",mi=0,list=false,sel=null;const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const mark=(d,o)=>d.JRMAP?(d.JRMARK[d.JRMAP[o]||"없음"]||""):"";
@@ -13,7 +13,7 @@ const chip=e=>`<span class="chip${e.kind=="est"?" est":""}" data-i="${e.i}" styl
 if(list){$("cal").innerHTML=evs.length?evs.map(e=>`<div class="row${e.kind=="est"?" est":""}" data-i="${e.i}"><span class="dt">${+e.d.slice(8)}일</span><span class="sw" style="background:${d.COLOR[e.kind]}"></span><span>${mark(d,e.org)}${esc(e.label)}</span></div>`).join(""):"<p>이 달은 일정이 없습니다.</p>";}
 else{const f=new Date(y,mo-1,1).getDay(),n=new Date(y,mo,0).getDate();let h="日月火水木金土".split("").map((_,i)=>`<div class="h"${i==0?' style="color:#E5484D"':""}>${"일월화수목금토"[i]}</div>`).join("");
 const cells=[];for(let i=0;i<f;i++)cells.push(0);for(let i=1;i<=n;i++)cells.push(i);while(cells.length%7)cells.push(0);
-h+=cells.map(c=>{if(!c)return '<div class="d"></div>';const ds=`${m}-${String(c).padStart(2,"0")}`;return `<div class="d${ds==TODAY?" today":""}"><div class="n">${c}</div>${evs.filter(e=>e.d==ds).map(chip).join("")}</div>`}).join("");
+h+=cells.map(c=>{if(!c)return '<div class="d"></div>';const ds=`${m}-${String(c).padStart(2,"0")}`;return `<div class="d${ds==TODAY?" today":""}${d.TRIP&&ds>=d.TRIP[0]&&ds<=d.TRIP[1]?" trip":""}"><div class="n">${c}</div>${evs.filter(e=>e.d==ds).map(chip).join("")}</div>`}).join("");
 $("cal").innerHTML=`<div class="grid">${h}</div>`;}
 $("prev").disabled=mi==0;$("next").disabled=mi==MONTHS.length-1;showDetail();}
 function showDetail(){const el=$("detail");if(sel==null){el.hidden=true;return}const d=D[tab],e=d.EVS[sel],o=d.ORGS[e.org];el.hidden=false;
