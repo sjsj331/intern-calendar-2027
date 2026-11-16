@@ -12,9 +12,10 @@ window.DATA={
    "kmi": "가점",
    "kiost": "확인",
    "kofic": "확인",
-   "kha": "확인",
    "geps": "가점",
-   "koficNew": "의무"
+   "koficNew": "의무",
+   "bsm": "확인",
+   "kiostNew": "확인"
   },
   "JRTEXT": {
    "의무": "★ 의무채용·할당 (이전지역인재 30% 목표)",
@@ -150,17 +151,6 @@ window.DATA={
     "conf": "확정",
     "src": "https://www.ybmnet.co.kr"
    },
-   "kha": {
-    "name": "한국해양조사협회",
-    "field": "전산정보",
-    "type": "확인 필요",
-    "region": "부산 소재 여부·지역인재 해당 여부 확인 필요",
-    "conf": "확정: 11/17 마감, 11/28 필기 (아침 화면 기준. 공고 원문은 아직 확인 못 함)",
-    "req": "공고문 확인 필요",
-    "ok": "확인 필요",
-    "tone": "neutral",
-    "src": "-"
-   },
    "geps": {
     "name": "공무원연금공단 신입 (정규직)",
     "field": "5급 전산(일반). 근무 장소: 본사(제주) 및 전국 각 지부",
@@ -203,6 +193,28 @@ window.DATA={
     "tone": "warning",
     "conf": "확정: 11/2~11/12 10:00",
     "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306540"
+   },
+   "bsm": {
+    "name": "국립부산과학관 체험형 청년인턴",
+    "field": "교육·사무행정 / 전시장운영, 부산 기장",
+    "type": "체험형 청년인턴",
+    "region": "과학기술정보통신부 산하. 지역인재 가점은 공고문 확인",
+    "req": "만 15~34세, 채용예정일 즉시 근무 가능. 남자는 병역 필/면제. 서류 4배수 → 면접",
+    "ok": "지원 가능 (내일 마감)",
+    "tone": "warning",
+    "conf": "확정: 10/28~11/12",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306327"
+   },
+   "kiostNew": {
+    "name": "한국해양과학기술원(KIOST) 2027년 1차 직원 (정규직·무기계약직)",
+    "field": "연구직·기술직(정보통신 포함)·기능직 등 23명. 근무지 부산 본원 외 경북·경남·제주",
+    "type": "인턴 아님. 정규직/무기계약직",
+    "region": "연구기관이라 지역인재 의무채용 제외가 많음. 공고문 확인",
+    "req": "정규직·무기계약 기술직: 서류 → 직무능력심사 → 인성검사·면접. 분야별 자격은 공고문·직무기술서(pdf)에서 확인 필요 (전산 분야 유무 확인 못 함)",
+    "ok": "확인 필요",
+    "tone": "neutral",
+    "conf": "확정: 11/11~11/26",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306913"
    }
   },
   "EVS": [
@@ -243,16 +255,16 @@ window.DATA={
     "org": "bohunbs"
    },
    {
+    "d": "2026-11-12",
+    "label": "부산과학관 인턴 마감",
+    "kind": "deadline",
+    "org": "bsm"
+   },
+   {
     "d": "2026-11-17",
     "label": "JPT 접수 12시",
     "kind": "exam",
     "org": "me"
-   },
-   {
-    "d": "2026-11-17",
-    "label": "해양조사협회 전산정보 마감",
-    "kind": "deadline",
-    "org": "kha"
    },
    {
     "d": "2026-11-18",
@@ -297,16 +309,16 @@ window.DATA={
     "org": "kpf"
    },
    {
+    "d": "2026-11-26",
+    "label": "KIOST 직원채용 마감",
+    "kind": "deadline",
+    "org": "kiostNew"
+   },
+   {
     "d": "2026-11-27",
     "label": "JPT 성적",
     "kind": "exam",
     "org": "me"
-   },
-   {
-    "d": "2026-11-28",
-    "label": "해양조사협회 필기",
-    "kind": "stage",
-    "org": "kha"
    },
    {
     "d": "2026-12-06",
@@ -527,44 +539,44 @@ window.DATA={
     "src": "-"
    },
    "bohun": {
-    "name": "중앙보훈병원 (서울 강동)",
-    "field": "전산",
-    "type": "확인 필요",
-    "conf": "확정: 11/13 마감 (아침 화면(today.html) 기준 날짜. 공고 원문은 아직 확인 못 함)",
-    "req": "공고문 확인 필요",
-    "ok": "확인 필요",
-    "tone": "neutral",
-    "src": "-"
+    "name": "중앙보훈병원 전산담당 정규직 (서울 강동)",
+    "field": "기술직 전산담당",
+    "type": "인턴 아님. 정규직",
+    "req": "필수: 정보처리기사 → 충족. 서류 적부(요건 충족자 전원 합격) → 필기 11/29(일) → 인성검사 12/4~6 → 면접(날짜 미정). 필기 60% + 면접 40%",
+    "ok": "지원 가능 (자격 충족)",
+    "tone": "success",
+    "conf": "확정: 10/30~11/13(금). 면접일 미공개 → 일본 여행(12/14~)과 겹칠 수 있음",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306556"
    },
    "jdc": {
-    "name": "제주국제자유도시개발센터(JDC) (본사 제주)",
-    "field": "확인 필요",
-    "type": "확인 필요",
-    "conf": "확정: 11/13 마감 (아침 화면(today.html) 기준 날짜. 공고 원문은 아직 확인 못 함)",
-    "req": "공고문 확인 필요",
-    "ok": "확인 필요",
-    "tone": "neutral",
-    "src": "-"
+    "name": "제주국제자유도시개발센터(JDC) 정규직",
+    "field": "6급 전산(전국)·인공지능(전국) 등. 근무지 서울·제주",
+    "type": "인턴 아님. 정규직 6급 (수습 3개월)",
+    "req": "나이·학력·전공 제한 없음. 1차 서류+NCS 필기(직업기초 40·직무수행 10문항) → 인성검사 → 면접. 한국사 4급 이상 가점 1%",
+    "ok": "지원 가능 (제주 발령 가능성)",
+    "tone": "warning",
+    "conf": "확정: 10/29~11/13. 필기·면접일은 공고문(pdf) 확인",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306508"
    },
    "ssis": {
-    "name": "사회보장정보원 (서울)",
-    "field": "확인 필요",
-    "type": "확인 필요",
-    "conf": "확정: 11/16 마감 (아침 화면(today.html) 기준 날짜. 공고 원문은 아직 확인 못 함)",
-    "req": "공고문 확인 필요",
-    "ok": "확인 필요",
-    "tone": "neutral",
-    "src": "-"
+    "name": "한국사회보장정보원 제4차 (서울)",
+    "field": "전산초급(일반)·전산초급(보안) 등",
+    "type": "인턴 아님. 기간제·육아휴직 대체 계약직",
+    "req": "전산초급(일반): 기사 자격 취득자 → 정보처리기사로 충족. 보안은 정보보안기사 필요",
+    "ok": "지원 가능 (계약직)",
+    "tone": "warning",
+    "conf": "확정: 11/2~11/16",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306406"
    },
    "nps": {
-    "name": "국민연금공단 (본부 전주)",
-    "field": "정보보안",
-    "type": "확인 필요",
-    "conf": "확정: 11/16 마감 (아침 화면(today.html) 기준 날짜. 공고 원문은 아직 확인 못 함)",
-    "req": "공고문 확인 필요",
-    "ok": "확인 필요",
+    "name": "국민연금공단 정보보안전문가 (본부 전주)",
+    "field": "정보보안 전문계약직",
+    "type": "인턴 아님. 경력 전문계약직",
+    "req": "필수: 정보화 학사 + 정보보안 실무 5년 이상(석사는 3년)",
+    "ok": "지원 불가 (경력 요건)",
     "tone": "neutral",
-    "src": "-"
+    "conf": "확정: 11/2~11/16",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306570"
    },
    "geps": {
     "name": "공무원연금공단 신입 (정규직)",
@@ -628,6 +640,36 @@ window.DATA={
     "tone": "neutral",
     "conf": "확정: 11/2~11/16",
     "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306606"
+   },
+   "kha": {
+    "name": "한국해양조사협회 정규직 (근무지 서울)",
+    "field": "일반행정(전산정보) 8급 1명",
+    "type": "인턴 아님. 정규직 일반직 8급",
+    "req": "응시자격: 전산정보 분야 기사 이상(정보처리기사 해당) → 충족. 서류 20배수 → 필기 5배수 → 면접. 필기 과목은 공고문(hwp) 확인",
+    "ok": "지원 가능 (1명)",
+    "tone": "warning",
+    "conf": "확정: 11/2~11/17. 필기 11/28(기존 메모 기준, 공고문으로 재확인 필요)",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306612"
+   },
+   "kimst": {
+    "name": "해양수산과학기술진흥원(KIMST) 체험형 청년인턴",
+    "field": "경영·사무, 서울",
+    "type": "체험형 청년인턴",
+    "req": "만 15~34세, 학력 제한 없음. 서류 5배수(지원동기·경험·의사소통·문제해결 각 25점) → 면접. 가점: 지역인재 5%, 한국사 1급 2%·2급 1%",
+    "ok": "지원 가능",
+    "tone": "success",
+    "conf": "확정: 11/9~11/25. 근무기간·면접일은 공고문 확인",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306815"
+   },
+   "kiip": {
+    "name": "한국지식재산연구원 체험형 청년인턴",
+    "field": "연구·사업·행정 지원, 서울",
+    "type": "체험형 청년인턴",
+    "req": "고졸 이상, 만 34세 이하. NCS 지원서·자소서 → 경험/상황면접. 고졸자 우대",
+    "ok": "지원 가능",
+    "tone": "success",
+    "conf": "확정: 11/2~11/17",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306600"
    }
   },
   "EVS": [
@@ -669,7 +711,7 @@ window.DATA={
    },
    {
     "d": "2026-11-13",
-    "label": "보훈병원 전산 마감",
+    "label": "중앙보훈병원 전산 마감",
     "kind": "deadline",
     "org": "bohun"
    },
@@ -693,7 +735,7 @@ window.DATA={
    },
    {
     "d": "2026-11-16",
-    "label": "국민연금 정보보안 마감",
+    "label": "국민연금 정보보안(경력) 마감",
     "kind": "deadline",
     "org": "nps"
    },
@@ -708,6 +750,18 @@ window.DATA={
     "label": "JPT 접수마감 12시",
     "kind": "exam",
     "org": "me"
+   },
+   {
+    "d": "2026-11-17",
+    "label": "해양조사협회 전산 마감",
+    "kind": "deadline",
+    "org": "kha"
+   },
+   {
+    "d": "2026-11-17",
+    "label": "지식재산연구원 인턴 마감",
+    "kind": "deadline",
+    "org": "kiip"
    },
    {
     "d": "2026-11-18",
@@ -746,6 +800,12 @@ window.DATA={
     "org": "me"
    },
    {
+    "d": "2026-11-25",
+    "label": "해양수산과학기술진흥원 마감",
+    "kind": "deadline",
+    "org": "kimst"
+   },
+   {
     "d": "2026-11-26",
     "label": "언론재단 최종발표",
     "kind": "stage",
@@ -756,6 +816,24 @@ window.DATA={
     "label": "JPT 성적",
     "kind": "exam",
     "org": "me"
+   },
+   {
+    "d": "2026-11-28",
+    "label": "해양조사협회 필기",
+    "kind": "stage",
+    "org": "kha"
+   },
+   {
+    "d": "2026-11-29",
+    "label": "중앙보훈병원 필기",
+    "kind": "stage",
+    "org": "bohun"
+   },
+   {
+    "d": "2026-12-04",
+    "label": "중앙보훈병원 인성검사 (12/4~6)",
+    "kind": "stage",
+    "org": "bohun"
    },
    {
     "d": "2026-12-06",

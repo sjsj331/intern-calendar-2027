@@ -1,5 +1,5 @@
 const D=window.DATA,TODAY=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Seoul"}),MONTHS=["2026-11","2026-12","2027-01","2027-02","2027-03","2027-04","2027-05","2027-06"];
-const CONCL={busan:"오늘 언론재단 11/9 17:59! 청소년상담원 11/10·남부발전 11/11",seoul:"언론재단 11/9 17:59 · IBK 11/16 10시 · 예금보험공사 11/20"};
+const CONCL={busan:"JPT 접수 11/17 · KIOST 직원 11/26 · HUG 인턴 공고 11월 말 예상",seoul:"해양조사협회 전산·지식재산연 11/17 · 예보 11/20 · KIMST 11/25 · 보훈병원 필기 11/29"};
 let tab="busan",mi=0,list=false,sel=null;const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const mark=(d,o)=>d.JRMAP?(d.JRMARK[d.JRMAP[o]||"없음"]||""):"";
