@@ -15,7 +15,9 @@ window.DATA={
    "geps": "가점",
    "koficNew": "의무",
    "bsm": "확인",
-   "kiostNew": "확인"
+   "kiostNew": "확인",
+   "koficIntern": "확인",
+   "kotsaBs": "없음"
   },
   "JRTEXT": {
    "의무": "★ 의무채용·할당 (이전지역인재 30% 목표)",
@@ -215,6 +217,28 @@ window.DATA={
     "tone": "neutral",
     "conf": "확정: 11/11~11/26",
     "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306913"
+   },
+   "koficIntern": {
+    "name": "영화진흥위원회 2027 상반기 체험형 인턴(일반)",
+    "field": "사무 4명, 부산 해운대 본사",
+    "type": "체험형 청년인턴 (2027-01-11 입사)",
+    "region": "부산 이전기관. 우대는 취업지원대상자·장애인만 표시됨",
+    "req": "만 34세 이하, 학력·전공·병역 제한 없음. 단 재학생·휴학생·취업 확정자 지원 불가 → 졸업(예정) 전이면 지원 불가. 서류 → 면접",
+    "ok": "재학생이면 지원 불가",
+    "tone": "warning",
+    "conf": "확정: 11/18~12/3. 서류발표 12/17 전후, 면접 12/23 전후(일본 여행 중), 최종 12/29 전후",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=307201"
+   },
+   "kotsaBs": {
+    "name": "한국교통안전공단 부산 안전사업처 청년인턴(사무)",
+    "field": "사무 1명, 부산",
+    "type": "체험형 청년인턴 (기간제)",
+    "region": "본사 김천 이전기관. '이전지역인재' 우대는 대구·경북 기준이라 부산은 해당 없을 가능성",
+    "req": "만 15~34세, 학력·자격 제한 없음. 공고일 기준 취업 중이면 지원 불가. 서류 3배수 → 면접",
+    "ok": "지원 가능 (1명)",
+    "tone": "warning",
+    "conf": "확정: 11/19~12/4 10:00",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=307073"
    }
   },
   "EVS": [
@@ -321,6 +345,18 @@ window.DATA={
     "org": "me"
    },
    {
+    "d": "2026-12-03",
+    "label": "영진위 인턴 마감",
+    "kind": "deadline",
+    "org": "koficIntern"
+   },
+   {
+    "d": "2026-12-04",
+    "label": "교통안전공단 부산인턴 마감 10시",
+    "kind": "deadline",
+    "org": "kotsaBs"
+   },
+   {
     "d": "2026-12-06",
     "label": "JLPT",
     "kind": "exam",
@@ -337,6 +373,12 @@ window.DATA={
     "label": "일본 여행 (12/14~28)",
     "kind": "personal",
     "org": "me"
+   },
+   {
+    "d": "2026-12-23",
+    "label": "영진위 인턴 면접 (전후)",
+    "kind": "stage",
+    "org": "koficIntern"
    },
    {
     "d": "2026-12-28",
@@ -670,6 +712,38 @@ window.DATA={
     "tone": "success",
     "conf": "확정: 11/2~11/17",
     "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=306600"
+   },
+   "kotsa": {
+    "name": "한국교통안전공단 서울 청년인턴(사무)",
+    "field": "서울본부 송파·마포·노원·구로 자격시험 보조 + 항공자격처(서울) 1명",
+    "type": "체험형 청년인턴 (기간제)",
+    "req": "만 15~34세, 학력·자격 제한 없음. 공고일 기준 취업 중이면 지원 불가. 서류 3배수 → 면접",
+    "ok": "지원 가능",
+    "tone": "success",
+    "conf": "확정: 11/19~12/4 10:00 (서울본부·항공자격처 공고 따로 있음)",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=307025"
+   },
+   "epost": {
+    "name": "우체국물류지원단 2027 1분기 청년인턴",
+    "field": "행정·사무. 체험형 13명(서울·경기·광주) / 채용형 6명(서울)",
+    "type": "체험형(1/11 근무 시작) + 채용형(1/18 근무 시작, 정규직 전환형)",
+    "region": "비수도권 지역인재·공공기관 인턴 경험자 우대",
+    "req": "만 34세 이하, 학력·자격 제한 없음. 남자는 군필/면제. 체험형: 서류 3배수(자격증+자소서) → 인성검사 → 면접. 채용형: 서류 10배수(자격증·외국어) → NCS+보고서 필기 → 면접",
+    "ok": "지원 가능 (채용형은 필기)",
+    "tone": "success",
+    "conf": "확정: 11/17~12/1",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=307162"
+   },
+   "ssc": {
+    "name": "한국사회복지협의회 청년인턴",
+    "field": "청년인턴(체험형) 2명, 서울·세종",
+    "type": "체험형 청년인턴 (2027-02-01 임용)",
+    "region": "지역인재·청년·공공기관 인턴 경험자 우대",
+    "req": "서류 7배수 → 면접 12/14~17(예정) → 발표 12/18. 세부 자격은 공고문 확인",
+    "ok": "면접이 일본 여행과 겹침",
+    "tone": "warning",
+    "conf": "확정: 11/17~12/1 18:00. 서류발표 12/11",
+    "src": "https://job.alio.go.kr/mobile2021/recruit/recruitView.do?idx=307060"
    }
   },
   "EVS": [
@@ -830,10 +904,28 @@ window.DATA={
     "org": "bohun"
    },
    {
+    "d": "2026-12-01",
+    "label": "우체국물류지원단 인턴 마감",
+    "kind": "deadline",
+    "org": "epost"
+   },
+   {
+    "d": "2026-12-01",
+    "label": "사회복지협의회 인턴 마감 18시",
+    "kind": "deadline",
+    "org": "ssc"
+   },
+   {
     "d": "2026-12-04",
     "label": "중앙보훈병원 인성검사 (12/4~6)",
     "kind": "stage",
     "org": "bohun"
+   },
+   {
+    "d": "2026-12-04",
+    "label": "교통안전공단 서울인턴 마감 10시",
+    "kind": "deadline",
+    "org": "kotsa"
    },
    {
     "d": "2026-12-06",
@@ -852,6 +944,12 @@ window.DATA={
     "label": "일본 여행 (12/14~28)",
     "kind": "personal",
     "org": "me"
+   },
+   {
+    "d": "2026-12-14",
+    "label": "사회복지협의회 면접 (12/14~17)",
+    "kind": "stage",
+    "org": "ssc"
    },
    {
     "d": "2026-12-24",
